@@ -703,7 +703,7 @@ function App() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             {/* Copyright information */}
             <div className="text-cyan-400 font-semibold">
-              SISTEMA TÉCNICO © 2025
+              Departamento de Ingenieria
             </div>
             {/* Status badges and print button container */}
             <div className="flex gap-4 mt-3 md:mt-0">
