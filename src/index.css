@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0.7; }
+  50% { opacity: 1; }
+}
+
+.animate-fade-gradient {
+  animation: fadeInOut 3s ease-in-out infinite;
+}
+
+/* Print Styles */
+@media print {
+  * {
+    -webkit-print-color-adjust: exact !important;
+    color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  
+  .bg-gray-900 {
+    background: white !important;
+    color: black !important;
+  }
+  
+  .bg-gray-800 {
+    background: #f8f9fa !important;
+    color: black !important;
+  }
+  
+  .bg-gray-700 {
+    background: #e9ecef !important;
+    color: black !important;
+  }
+  
+  .bg-black {
+    background: #f8f9fa !important;
+    color: black !important;
+  }
+  
+  .text-cyan-100,
+  .text-cyan-400,
+  .text-green-400,
+  .text-purple-400,
+  .text-yellow-400 {
+    color: black !important;
+  }
+  
+  .text-gray-300,
+  .text-gray-600 {
+    color: #495057 !important;
+  }
+  
+  .border-cyan-400,
+  .border-green-400,
+  .border-purple-400,
+  .border-yellow-400 {
+    border-color: #dee2e6 !important;
+  }
+  
+  .animate-fade-gradient {
+    animation: none !important;
+  }
+  
+  /* Hide elements that shouldn't print */
+  .print\\:hidden {
+    display: none !important;
+  }
+  
+  /* Ensure proper page breaks */
+  section {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  
+  /* Adjust margins for print */
+  .max-w-6xl {
+    max-width: none !important;
+  }
+  
+  .p-6 {
+    padding: 1rem !important;
+  }
+  
+  /* Make text more readable in print */
+  .text-3xl {
+    font-size: 1.5rem !important;
+  }
+  
+  .text-xl {
+    font-size: 1.25rem !important;
+  }
+  
+  .text-lg {
+    font-size: 1.125rem !important;
+  }
+}
