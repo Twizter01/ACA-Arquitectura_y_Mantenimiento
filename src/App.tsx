@@ -65,7 +65,7 @@ function App() {
           <div className="flex items-center gap-4 mt-3 text-sm">
             <span className="bg-cyan-900 px-3 py-1 rounded border border-cyan-400">STATUS: ACTIVO</span>
             <span className="bg-purple-900 px-3 py-1 rounded border border-purple-400">VERSIÓN: 1.0</span>
-            <span className="bg-green-900 px-3 py-1 rounded border border-green-400">FECHA: 2025</span>
+            <span className="bg-green-900 px-3 py-1 rounded border border-green-400">FECHA: 07/09/2025</span>
           </div>
         </div>
       </header>
